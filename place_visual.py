@@ -1,8 +1,10 @@
 """
-Screen is 1920 X 1080.
+TODO: Paramaterise screen size.
+Screen is assumed to be 1920 X 1080.
 
-Where is it ? 
-Ans: 1761,480
+Things that are possible with this.
+1 Place N visuals with X gaps between them.
+2 Place a Card at Position X,Y with size W,H 
 """
 import pyautogui as r
 
