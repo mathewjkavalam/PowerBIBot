@@ -1,0 +1,97 @@
+<!--
+    TODO:Improve css using inheritance of css properties
+    Below css when translated to v_lang
+    CDX 115,940,18,18 <--Title
+    CDX 115,94,968,18 <--Logo
+    CDX 153,124,18,143
+    CDX 153,124,152,143
+    CDX 153,124,287,143
+    CDX 153,249,421,143
+    CDX 153,186,679,143
+    CDX 153,186,876,143
+    CDX 229,517,18,306
+    CDX 229,517,545,306
+    CDX 153,517,18,545
+    CDX 153,517,545,545 <--Line chart
+-->
+<html>
+    <style>
+            body{
+                background: red;
+                
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 0.75fr 1fr 1.5fr 1fr;
+                gap: 10px;
+                background: #2196F3;
+                padding: 10px;
+                height: 680px;
+            }
+            .grid-row-1{
+                grid-template-columns: auto 1fr 10px 0.1fr auto; 
+          
+            }
+            .grid-row-2{
+                gap: 10px;
+                grid-template-columns: 1fr 1fr 1fr 2fr 1.5fr 1.5fr;    
+            }
+            .grid-row-3,.grid-row-4{
+                gap: 10px;
+                grid-template-columns: 1fr 1fr;    
+            }
+            .grid-row-1,.grid-row-2,.grid-row,.grid-row-3,.grid-row-4{
+                display: grid;
+                grid-template-rows: 1fr;
+                text-align: center;
+                padding: 0px;
+                font-size: 30px;
+                
+            }
+            .grid-row-3-1{
+                background: peachpuff;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 2fr 10px 1fr 10px; 
+            }
+            .visual{
+                background: gray;
+            }
+            .space{
+                background: #2196F3;;
+            }
+    </style>
+    <body>
+        <div class="grid-container">
+            <div class="grid-row-1">
+                <div class="space"></div>
+                <div class="visual">Title</div>
+                <div class="space"></div>
+                <div class="visual">Logo</div>
+                <div class="space"></div>
+            </div>    
+            <div class="grid-row-2">
+                <div class="visual">KPI Card</div>
+                <div class="visual">KPI Card</div>
+                <div class="visual">KPI Card</div>
+                <div class="visual">KPI Gauge</div>
+                <div class="visual">KPI Card</div>
+                <div class="visual">KPI Card</div>
+            </div>
+            <div class="grid-row-3">
+                <div class="grid-row-3-1">
+                    <div class="visual">Donut Cart</div>
+                    <div class="space"></div>
+                    <div class="visual">Table</div>
+                    <div class="space"></div>
+                </div>
+                <div class="visual">Bar chart</div>
+            </div>
+            <div class="grid-row-4">
+                <div class="visual">Bar chart</div>
+                <div class="visual">Line chart</div>
+            </div>
+        </div>
+    </body>
+</html>

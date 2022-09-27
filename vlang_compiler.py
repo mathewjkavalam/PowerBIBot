@@ -32,7 +32,7 @@ while not quit:
             tokens[i] = {"op":opword,"args":cleaned}
             if debug:tokens
             if opword == 'CDX':
-                function1(args[0],args[1],args[2],args[3],args[4])
+                function1(args[0],args[1],args[2],args[3],"card")
         else:
             print("Not a recognised keywords:"+in_word)
     if debug: print(tokens)
